@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+main {
+  min-height: 86vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Redressed', cursive;
+  font-size: 2rem;
+}
+
+.MyList {
+  display: grid;
+  grid-template-columns: fit-content(250px) fit-content(250px) fit-content(
+      250px
+    );
+  grid-template-rows: fit-content(250px) fit-content(250px) fit-content(250px);
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+  justify-items: center;
+  align-items: center;
+}

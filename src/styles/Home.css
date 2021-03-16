@@ -1,0 +1,12 @@
+.Home {
+  min-height: 86vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.Home--container {
+  width: 50%;
+  min-height: 3em;
+  text-align: center;
+}

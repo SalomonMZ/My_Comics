@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+.Header {
+    background: linear-gradient(to right, #1FD786, #1FC6D7);
+    min-height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Redressed', cursive;
+}
+
+.Header--logo{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.Header--logo img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.Header--nav {
+    margin-right: 20px;
+    font-size: 1.5rem;
+}

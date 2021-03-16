@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+.Footer {
+  display: flex;
+  min-height: 7vh;
+  background: linear-gradient(to right, #1fd786, #1fc6d7);
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Redressed', cursive;
+}
+
+.Footer a {
+  margin-right: 2em;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.Footer h2 {
+    margin-left: 1em;
+}
+
+.Footer--social {
+  display: flex;
+  align-items: center;
+}
+
+.Footer--social img {
+  max-width: 40px;
+  margin-right: 10px;
+}
