@@ -3,16 +3,17 @@ import { FaStar } from "react-icons/fa";
 import ComicsContext from "../context/ComicsContext";
 import "../styles/Rating.css";
 
-const Rating = ({ comic }) => {
+const Rating = ({ comic, disabled }) => {
   const [rating, setRating] = useState(comic.rate);
   const [hover, setHover] = useState(null);
   const { rateComic } = useContext(ComicsContext);
-
   const handeClick = (value) => () => {
-    setRating(value);
-    const ratedComic = { ...comic, rate: value };
-    setRating(null);
-    rateComic(ratedComic);
+    if (!disabled) {
+      setRating(value);
+      const ratedComic = { ...comic, rate: value };
+      setRating(null);
+      rateComic(ratedComic);
+    }
   };
 
   return (
@@ -20,12 +21,13 @@ const Rating = ({ comic }) => {
       {[...Array(5)].map((star, i) => {
         const ratingValue = i + 1;
         return (
-          <label>
+          <label key={i}>
             <input
               type="radio"
               name="rating"
               value={ratingValue}
               onClick={handeClick(ratingValue)}
+              disabled={disabled}
             />
             <FaStar
               className="star"

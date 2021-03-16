@@ -21,7 +21,7 @@ const ComicCardContainer = () => {
     fetchData();
   }, [state.myRatedComics]);
 
-  return <>{loading ? <Loader /> : <ComicCard comic={comic} />}</>;
+  return <>{loading ? <Loader /> : <ComicCard comic={comic} disabled={false} />}</>;
 };
 
 export default ComicCardContainer;

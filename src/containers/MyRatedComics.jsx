@@ -10,8 +10,8 @@ const MyRatedComics = () => {
     <main>
       {myRatedComics.length > 0 ? (
           <div className="MyList">
-          {myRatedComics.map((comic) => (
-            <ComicCard comic={comic} />
+          {myRatedComics.map((comic, i) => (
+            <ComicCard comic={comic} disabled={true} key={i} />
           ))}
         </div>
       ) : (
